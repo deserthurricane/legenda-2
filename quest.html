@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="modal">
+        <div class="modal-menu">
+            <button type="button" class="menu__back">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="modal__header">
+            <h1 class="quest-title"></h1>
+            <h2 class="quest-summary"></h2>
+            <div class="quest-info">
+                <div class="quest-info__players"></div>
+                <div class="quest-info__time"></div>
+                <div class="quest-info__complexity"></div>
+            </div>
+        </div>
+        <div class="modal__body">
+            <div class="quest-description">
+                <h2 class="quest-description__title">Описание</h2>
+                <p class="quest-description__text"></p>
+            </div>
+            <div class="quest-photos"></div>
+        </div>
+        <div class="modal__footer">
+            <div class="contacts__container">
+                <h2>
+                    <a name="contacts">Контакты</a>
+                </h2>
+                <div class="contacts">
+                    <div class="contacts__info">
+                        <div>
+                            <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;
+                            <a href="tel:+79167827331">+7 (916) 782-73-31</a>
+                        </div>
+                        <div>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; г.Жуковский, ул.Чкалова, д. 35</div>
+                        <hr class="golden-text" />
+                        <div>
+                            <i class="fa fa-vk" aria-hidden="true"></i>&nbsp;
+                            <a href="https://vk.com/questlegenda" target="_blank">ВКонтакте</a>
+                        </div>
+                        <div>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;
+                            <a href="https://www.instagram.com/questlegenda/" target="_blank">Инстаграм</a>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <iframe src="https://yandex.ru/map-widget/v1/-/CBa-zCesTC" width="100%" height="400px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="js/modal.js">
+    </script>
+    <script src="js/slider.js">
+    </script>
+</body>
+
+</html>
