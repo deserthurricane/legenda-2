@@ -2,13 +2,17 @@
 
 $.ajax({
   url:
-    'https://api.vk.com/method/board.getComments?group_id=100587008&topic_id=33298359&count=100&sort=desc&extended=1&v=5.71',
+    'https://api.vk.com/method/board.getComments?group_id=100587008&topic_id=33298359&count=100&sort=desc&extended=1&v=5.71&access_token=5f80c688ffb14629abc338a3d4c2eca2184754a4a097f27a03e1b861efa3bb2bd4b57e6dcf3e47fd96dfd',
   method: 'GET',
   dataType: 'jsonp'
 }).then(result => {
-  let { response: { items } } = result;
+  let {
+    response: { items }
+  } = result;
   let comments = items;
-  let { response: { profiles } } = result;
+  let {
+    response: { profiles }
+  } = result;
   // Комментарии получены. Отфильтровываем комментарии администратора (from_id  админа равно -100587008, число меньше нуля)
   comments = comments.filter(comment => {
     return comment.from_id > 0 && comment.text;
