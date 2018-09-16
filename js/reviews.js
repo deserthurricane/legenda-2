@@ -1,8 +1,10 @@
 // ЗАГРУЗКА КОММЕНТАРИЕВ ИЗ ГРУППЫ ВКОНТАКТЕ
 
+const token =
+  'e1bfe6000bac986636c3a5d22b71b61925d1d97a3c5163475500309b2590c8dfb7f6e562249ddbf8c6fa4';
+
 $.ajax({
-  url:
-    'https://api.vk.com/method/board.getComments?group_id=100587008&topic_id=33298359&count=100&sort=desc&extended=1&v=5.71&access_token=5f80c688ffb14629abc338a3d4c2eca2184754a4a097f27a03e1b861efa3bb2bd4b57e6dcf3e47fd96dfd',
+  url: `https://api.vk.com/method/board.getComments?group_id=100587008&topic_id=33298359&count=100&sort=desc&extended=1&v=5.71&access_token=${token}`,
   method: 'GET',
   dataType: 'jsonp'
 }).then(result => {

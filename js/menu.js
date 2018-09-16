@@ -9,11 +9,11 @@ window.addEventListener('scroll', () => {
   menuDestinations.forEach((destination, index) => {
     if (
       menuDestinations[index + 1] !== undefined
-        ? top >= menuDestinations[index].getBoundingClientRect().top + pageYOffset && top < menuDestinations[index + 1].getBoundingClientRect().top + pageYOffset
+        ? top >= menuDestinations[index].getBoundingClientRect().top + pageYOffset &&
+          top < menuDestinations[index + 1].getBoundingClientRect().top + pageYOffset
         : top >= menuDestinations[index].getBoundingClientRect().top + pageYOffset
     ) {
       menuLinks[index].setAttribute('active', 'true');
-      console.log('active');
     } else {
       menuLinks[index].setAttribute('active', 'false');
     }
@@ -23,7 +23,7 @@ window.addEventListener('scroll', () => {
 // MOBILE MENU
 const mobileMenu = document.querySelector('.menu-mobile');
 
-mobileMenu.onclick = function () {
+mobileMenu.onclick = function() {
   if (this.classList.contains('open')) {
     this.classList.remove('open');
     this.parentElement.querySelector('.menu-fixed__items').classList.remove('open');
